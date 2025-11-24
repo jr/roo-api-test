@@ -15,7 +15,27 @@
     "commands": [
       {
         "command": "roo-api-test.configure-roo",
-        "title": "Configure Roo Code"
+        "title": "Configure Roo Code",
+        "category": "Roo Test"
+      },
+      {
+        "command": "roo-api-test.ping-roo",
+        "title": "Ping Roo Extension",
+        "category": "Roo Test",
+        "icon": "$(pulse)"
+      },
+      {
+        "command": "roo-api-test.quick-ping",
+        "title": "Quick Ping (Silent)",
+        "category": "Roo Test"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "roo-api-test.ping-roo",
+        "key": "ctrl+shift+p ctrl+shift+r",
+        "mac": "cmd+shift+p cmd+shift+r",
+        "when": "editorTextFocus"
       }
     ]
   },
