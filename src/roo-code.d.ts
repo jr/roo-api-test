@@ -638,6 +638,15 @@ interface RooCodeAPI extends EventEmitter<RooCodeEvents> {
 	 * Returns true if the API is ready to use.
 	 */
 	isReady(): boolean
+	/**
+	 * Pings the Roo extension to check if it's responsive.
+	 * @returns A promise that resolves with status information including version.
+	 */
+	ping?(): Promise<{
+		status: 'ok' | 'error'
+		version?: string
+		message?: string
+	}>
 }
 
 export {
