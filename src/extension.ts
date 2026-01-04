@@ -40,7 +40,12 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('updated roo');
 	});
 
+	const helloWorldDisposable = vscode.commands.registerCommand('roo-api-test.hello-world', () => {
+		vscode.window.showInformationMessage('Hello World!');
+	});
+
 	context.subscriptions.push(disposable);
+	context.subscriptions.push(helloWorldDisposable);
 }
 
 // This method is called when your extension is deactivated
