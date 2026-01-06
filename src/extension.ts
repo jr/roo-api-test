@@ -40,7 +40,13 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('updated roo');
 	});
 
+	const randomNumberDisposable = vscode.commands.registerCommand('roo-api-test.random-number', () => {
+		const randomNumber = Math.floor(Math.random() * 101); // 0 to 100 inclusive
+		vscode.window.showInformationMessage(`Random number: ${randomNumber}`);
+	});
+
 	context.subscriptions.push(disposable);
+	context.subscriptions.push(randomNumberDisposable);
 }
 
 // This method is called when your extension is deactivated

@@ -16,6 +16,10 @@
       {
         "command": "roo-api-test.configure-roo",
         "title": "Configure Roo Code"
+      },
+      {
+        "command": "roo-api-test.random-number",
+        "title": "Generate Random Number"
       }
     ]
   },
