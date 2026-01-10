@@ -16,6 +16,22 @@
       {
         "command": "roo-api-test.configure-roo",
         "title": "Configure Roo Code"
+      },
+      {
+        "command": "roo-api-test.start-token-monitor",
+        "title": "Start Token Usage Monitor"
+      },
+      {
+        "command": "roo-api-test.stop-token-monitor",
+        "title": "Stop Token Usage Monitor"
+      },
+      {
+        "command": "roo-api-test.show-token-summary",
+        "title": "Show Token Usage Summary"
+      },
+      {
+        "command": "roo-api-test.clear-token-data",
+        "title": "Clear Token Usage Data"
       }
     ]
   },
