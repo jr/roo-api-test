@@ -25,7 +25,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "random": "npm run compile && node out/random-number.js"
   },
   "devDependencies": {
     "@types/vscode": "^1.99.1",
